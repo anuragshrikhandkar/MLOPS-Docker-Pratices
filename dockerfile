@@ -6,7 +6,8 @@ WORKDIR /app
 COPY . /app
 
 #install any needed package specific in requirements.txtx
-RUN pip install --no-catche-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
 
 #Make a port 5000 availabe  the word outside container 
 EXPOSE 5000
